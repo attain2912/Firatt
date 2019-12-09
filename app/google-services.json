@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "408254639248",
+    "firebase_url": "https://firatt-d14d3.firebaseio.com",
+    "project_id": "firatt-d14d3",
+    "storage_bucket": "firatt-d14d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408254639248:android:3f0a4a8407b3ef5f45bc15",
+        "android_client_info": {
+          "package_name": "com.firatt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408254639248-0dat736iua5ao8fn16di7bkq6esld4l9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firatt",
+            "certificate_hash": "b46748d2c6f19d006c90b7a83f56a9334b11d2cf"
+          }
+        },
+        {
+          "client_id": "408254639248-ibbnhsp3l57216ken7977a1cno6g77ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ZK1OtjsxjBt2STjs7VjCYkvhznKopNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408254639248-ibbnhsp3l57216ken7977a1cno6g77ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
