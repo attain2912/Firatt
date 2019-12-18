@@ -17,11 +17,9 @@ public class Chat {
         return messageTime;
     }
 
-
     public String getMessageText() {
         return messageText;
     }
-
 
     public Chat(){}
 

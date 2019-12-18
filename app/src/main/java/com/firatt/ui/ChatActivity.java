@@ -59,8 +59,11 @@ public class ChatActivity extends AppCompatActivity {
         tvgroup.setText(groupname);
 
         dbRef=FirebaseDatabase.getInstance().getReference("Chat");
+
         refchat=dbRef.child(getIntent().getStringExtra("sender")).child(groupname).child("ListMess");
+
         recchat=dbRef.child(groupname).child(getIntent().getStringExtra("sender")).child("ListMess");
+
         changechat=dbRef.child(getIntent().getStringExtra("sender")).child(groupname);
         refchat.addChildEventListener(new ChildEventListener() {
             @Override
@@ -76,7 +79,6 @@ public class ChatActivity extends AppCompatActivity {
             }
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
             }
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot){}
@@ -113,8 +115,10 @@ public class ChatActivity extends AppCompatActivity {
             id.put("send",getIntent().getStringExtra("sender"));
             id.put("rec",groupname);
             changechat.updateChildren(id);
+
             recchat.push().setValue(new Chat(edtmess.getText().toString().trim(),getIntent().getStringExtra("senderfcm"),type));
             refchat.push().setValue(new Chat(edtmess.getText().toString().trim(),getIntent().getStringExtra("senderfcm"),type));
+
             Retrofit.getInstance().addnotifi(map).enqueue(new Callback<Map>() {
                 @Override
                 public void onResponse(Call<Map> call, Response<Map> response) {
